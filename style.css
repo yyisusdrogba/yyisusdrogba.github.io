@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #FFFFFF;
+    --sickly-yellow: #cbe346;
+    --black: #000000;
+    --gray: #787878;
+    --blue: #282e47;
+    --blue-footer: #2b3049;
+    --gray-container: #f3f4f8;
+    --normal: 300;
+    --medium: 400;
+    --bold: 500;
+}
+
+/*--------Header---------*/
+header{
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 3px 1px 1px rgb(0 0 0 / 10%);
+    z-index: 2;
+}
+.header-top button{
+    display: none;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top img{
+    width: 2vw;
+    position: relative;
+    top: 2vw;
+    left: 10vw;
+}
+
+.header-menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0vw 0vw 2vw 20vw;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: Helvetica;
+    font-weight: var(--bold);
+    padding-left: 4vw;
+    font-size: 1vw;
+}
+
+/*--------Inicio---------*/
+
+.inicio{
+    background-image: url(./assets/group@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 54vw;
+}
+.inicio-container{
+    padding: 18vw 0vw 0vw 18vw;
+}
+.inicio-container h1{
+    color: var(--white);
+    font-family: Helvetica;
+    font-weight: var(--bold);
+    font-size: 3vw;
+    line-height: 4vw;
+}
+
+.inicio-container span{
+    color: var(--sickly-yellow);
+    font-family: Helvetica;
+    padding-left: 1vw;
+}
+
+.inicio-container button{
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 20px;
+    border: 1.4px var(--white) solid;
+    font-family: Helvetica;
+    font-weight: var(--medium);
+    margin-top: 30px;
+    padding: 1vw 1vw 1vw 1vw;
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+/*--------Accesorios---------*/
+
+.accesorios{
+    background-color: var(--gray-container);
+    height: 26vw;
+}
+
+.accesorios-container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.accesorios-parraf{
+    display: flex;
+    justify-content: end;
+    align-items: initial;
+}
+
+.accesorios-parraf p{
+    color: var(--sickly-yellow);
+    font-family: Helvetica;
+    font-weight: var(--medium);
+    font-size: 1.4vw;
+    padding-right: 30px;
+    padding-top: 7vw;
+}
+
+.accesorios-tittle h2{
+    color: var(--black);
+    font-family: Helvetica;
+    font-weight: var(--normal);
+    font-size: 3vw;
+    padding-top: 6vw;
+}
+
+.accesorios-tittle p{
+    color: var(--gray);
+    font-family: Helvetica;
+    font-weight: var(--normal);
+    font-size: 1.4vw;
+    line-height: 2vw;
+    padding-top: 30px;
+}
+
+.accesorios-btn{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.accesorios-btn button{
+    color: var(--blue);
+    border-radius: 20px;
+    border: 2px var(--blue) solid;
+    background-color: transparent;
+    font-family: Helvetica;
+    font-weight: var(--medium);
+    padding: 1vw 5vw 1vw 5vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+/*--------Raquetas---------*/
+.raquetas-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-container{
+    display: grid;
+    grid-template-columns: 0% 100%;
+    align-items: center;
+    position: relative;
+}
+
+.slider-container i{
+    color: var(--white);
+    font-size: 2vw;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px var(--white) solid;
+    padding: 1vw;
+}
+
+.slider-container i:hover{
+    background-color: var(--sickly-yellow);
+}
+
+i.slider-arrow-right{
+    position: absolute;
+    top: 26vw;
+    left: 22vw;
+}
+
+i.slider-arrow-left{
+    position: absolute;
+    top: 26vw;
+    left: 18vw;
+}
+
+.slider-body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    align-items: center;
+    background-image: url(./assets/ball-color-court-1405355@2x.png);
+    background-size: cover;
+    height: 32vw;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.slider-body-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider-texts {
+    width: 23vw;
+}
+
+.slider-texts h2{
+    color: var(--white);
+    font-family: Helvetica;
+    font-weight: var(--normal);
+    font-size: 3vw;
+    padding-top: 4vw;
+}
+
+.slider-texts span{
+    font-weight: var(--bold);
+}
+
+.slider-texts p{
+    color: var(--white);
+    font-family: Helvetica;
+    font-size: 1.4vw;
+    padding-top: 2vw;
+    line-height: 2.8vw;
+}
+
+.slider-arrow{
+    cursor: pointer;
+}
+
+.item{
+    padding: 2vw 1vw 0vw 2vw;
+}
+
+.item-slide p{
+    background-color: var(--sickly-yellow);
+    color: var(--white);
+    padding: 1vw;
+    border-radius: 50px;
+    font-size: 1.4vw;
+}
+
+.slide-text{
+    position: absolute;
+    top: 4vw;
+    left: 4vw;
+}
+
+.owl-carousel .owl-item img{
+    width: 84%;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots{
+    display: none;
+}
+
+/*--------background-img---------*/
+.background-img{
+    background-image: url(assets/action-athlete-ball-342361@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40vw;
+}
+/*--------footer---------*/
+footer{
+    background-color: var(--sickly-yellow);
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.footer-nav-nav{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-nav-nav a{
+    text-decoration: none;
+}
+.footer-nav-nav p{
+    color: var(--blue-footer);
+    font-family: Helvetica;
+    font-weight: var(--bold);
+    font-size: 1vw;
+    padding-top: 50px;
+}
+.footer-nav-social {
+    padding: 2vw 0vw 4vw 4vw;
+}
+.footer-nav-social img{
+    width: 3vw;
+    padding-left: 10px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 4vw;
+}
+.footer-logo img{
+    width: 4vw;
+}
+
+@media(max-width: 600px){    
+    /*-------header----------*/
+
+    .header-top img{
+        width: 4vw;
+        top: 1vw;
+    }
+
+    .header-top button{
+        display: block;
+        padding: 1vw 3vw 1vw 3vw;
+        margin: 1vw 2vw 0vw 0vw;
+        background-color: var(--sickly-yellow);
+        border: 1px var(--white) solid;
+        border-radius: 5px;
+    }
+
+    .header-menu a{
+        font-size: 2vw;
+    }
+
+    /*--------Inicio---------*/
+
+    .inicio-container h1{
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    .inicio-container button{
+        font-size: 2.6vw;
+        margin-top: 15px;
+    }
+
+    /*--------Accesorios---------*/
+
+    .accesorios{
+        height: 40vw;
+    }
+
+    .accesorios-container{
+        grid-template-columns: 30% 50%;
+    }
+
+    .accesorios-tittle h2{
+        font-size: 4vw;
+    }
+
+    .accesorios-parraf p{
+        font-size: 2.2vw;
+    }
+
+    .accesorios-tittle p{
+        font-size: 2.4vw;
+        line-height: 3.4vw;
+        padding-top: 14px;
+    }
+
+    .accesorios-btn{
+        position: relative;
+        left: 36vw;
+        top: 3vw;
+    }
+
+    .accesorios-btn button{
+        font-size: 2.6vw;
+    }
+
+    /*--------Accesorios---------*/
+
+    .raquetas-container{
+        grid-template-columns: 100%;
+    }
+
+    .slider-body{
+        justify-content: center;
+    }
+
+    .slider-texts{
+        width: 36vw;
+    }
+
+    .slider-texts h2{
+        font-size: 4vw;
+        padding-top: 6vw;
+    }
+
+    .slider-texts p{
+        font-size: 2.4vw;
+    }
+
+    i.slider-arrow-left{
+        top: 24vw;
+        left: 42vw;
+    }
+
+    i.slider-arrow-right{
+        top: 24vw;
+        left: 50vw;
+    }
+
+    .item-slide p{
+        font-size: 2.4vw;
+    }
+
+    .owl-carousel .owl-item img{
+        width: 32vw;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots{
+        display: block;
+    }
+    
+
+    /*-----Foooter------*/
+    .footer-container{
+        grid-template-columns: 100%;
+    }
+
+    .footer-nav-nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-nav-nav p{
+        font-size: 2.4vw;
+        padding-left: 2vw;
+    }
+
+    .footer-nav-social{
+        display: flex;
+        justify-content: center;
+        padding:3vw 0vw 0vw 0vw;
+    }
+
+    .footer-nav-social img{
+        width: 6vw;
+    }
+
+    .footer-logo{
+        padding-right: 6vw;
+        padding-bottom: 6vw;
+    }
+
+    .footer-logo img{
+        width: 6vw;
+    }
+
+}
